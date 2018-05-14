@@ -41,3 +41,12 @@ export const checkPhoneNumber = phoneNumber => /[0-9-]{6,9}$|[0-9-]{12}/.test(ph
  */
 
 export const checkMobilePhoneNumber = mobilePhoneNumber => /\d{3}-\d{4}-\d{4}$|\d{11}/.test(mobilePhoneNumber);
+
+/**
+ * check password
+ * passwordのvalidation
+ * -> 数字, 小文字, 大文字それぞれを含む8文字以上の文字列
+ * @param password
+ */
+
+export const checkPassWord = password => /(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(password);
