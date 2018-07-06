@@ -50,3 +50,4 @@ export const checkMobilePhoneNumber = mobilePhoneNumber => /\d{3}-\d{4}-\d{4}$|\
  */
 
 export const checkPassWord = password => /(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(password);
+
